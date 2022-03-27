@@ -1,14 +1,8 @@
-@import "variables";
-@import "mixins";
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/normalize';
+@import 'partials/typography';
 
-@import "normalize";
-@import "layout";
+@import 'partials/global';
+@import 'partials/header';
 
-/* Components */
-@import "components/form_field";
-
-/* Sections */
-@import "section/registration_form";
-
-/* Pages / Views */
-@import "pages/registration";
