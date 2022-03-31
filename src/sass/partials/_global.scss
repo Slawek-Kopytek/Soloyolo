@@ -4,12 +4,13 @@
 
 body {
   margin: 0;
-  background: lighten($color-dark, 75%);
+  background: $color-light;
   font-family: $font-text;
   font-size: 14px;
   line-height: 1.7;
-  font-weight: $font-normal;
+  text-align: center;
   color: $color-dark;
+  overflow-x: hidden;
 }
 
 .container {
