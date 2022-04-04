@@ -1,20 +1,10 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   background: $color-light;
   font-family: $font-text;
   font-size: 14px;
-  line-height: 1.7;
-  text-align: center;
   color: $color-dark;
+  text-align: center;
   overflow-x: hidden;
-}
-
-.container {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 0 20px;
+  box-sizing: border-box;
 }

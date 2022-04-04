@@ -1,0 +1,75 @@
+.product-widget {
+  [class^="skill-"] {
+    position: relative;
+  }
+
+  .skill-image {
+    position: absolute;
+    width: 47%;
+    height: 100%;
+    max-width: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-box-shadow: 0px 0px 19px 3px #707070;
+    box-shadow: 0px 0px 19px 3px #707070;
+  }
+
+  .skill-image img {
+    width: 100%;
+    height: 100%;
+    transition: $transition;
+  }
+
+  .skill-image img:hover {
+    transform: scale(1.2);
+}
+
+  .skill-right .skill-image {
+    right: 0;
+  }
+
+  .skill-right .skill-description {
+    padding: 36px 55% 36px 0;
+    text-align: left;
+  }
+
+  .name {
+    font-weight: $font-weight-bold;
+    font-size: 46px;
+    margin-bottom: 10px;
+  }
+
+  .border-top {
+    border-top: 3px solid $color-support;
+  }
+
+  .description{
+    font-size: 16px;
+  }
+
+  .specification {
+    font-size: 20px;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+
+    span{
+      color: $color-support;
+    }
+  }
+}
+
+.product-widget:nth-child(even){
+  .skill-description {
+    padding: 36px 0 36px 60%;
+    text-align: left;
+  }
+
+  .skill-right .skill-image {
+    left: 0;
+  }
+}
+
+.article-product h2{
+  text-transform: uppercase;
+}  

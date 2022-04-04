@@ -1,0 +1,68 @@
+.contact-widget {
+  .form {
+    max-height: 80%;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-dark;
+    font-size: 30px;
+    font-weight: $font-weight-bold;
+    margin: 20px 0;
+    text-align: center;
+
+    .field-message {
+      margin: 30px;
+    }
+
+    input {
+      border: 5px solid $color-dark;
+      min-width: 575px;
+      max-width: 575px;
+      min-height: 72px;
+      max-height: 72px;
+    }
+
+    textarea {
+      border: 5px solid $color-dark;
+      clear: left;
+      min-width: 575px;
+      max-width: 575px;
+      min-height: 150px;
+      max-height: 150px;
+      resize: none;
+    }
+  }
+} 
+
+.article-contact {
+  text-transform: uppercase;
+}
+
+.submit-btn {
+  display: inline-block;
+  min-width: 160px;
+  margin: 24px auto 0 auto;
+  padding: 16px;
+  border-radius: 5px;
+  font-family: $font-text;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 4px solid;
+  background-position: 100% 0;
+  background-size: 300%;
+  transition: $transition;
+  border-color: $color-main;
+  color: $color-main;
+  background-image: linear-gradient(90deg, $color-main 50%, transparent 50%)
+}
+
+.submit-btn:hover {
+  background-position: 0 100%;  
+  color: $color-light;
+}

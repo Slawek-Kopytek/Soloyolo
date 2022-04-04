@@ -1,6 +1,6 @@
 header {
   max-width: 1920px;
-  max-height: 1007px;
+  max-height: 100vh;
   position: relative;
   z-index: 1;
 
@@ -21,35 +21,37 @@ header {
   position: absolute;
   z-index: 2;
   top: 0;
-  left: 20px;
+  left: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   text-align: center;
   margin-top: 20px;
 }
 
 .logo {
-  font-weight: $font-weight-black;
+  font-weight: $font-weight-bold;
   color: $color-light;
   margin-left: 15%;
 
   h3 {
+    margin: 0;
     font-size: 36px;
-    margin: 0;
-  }
-
-  p {
-    font-size: 16px;
-    margin: 0;
+    color: $color-main;
+    font-family: $font-header;
   }
 }
 
-.main-nav {
+.nav-ul {
   margin-right: 15%;
-  padding-top: 10px;
+  padding: 10px 0;
 
-  a {
+  li {
+    display: inline-block;
+  }
+
+  a{
     text-decoration: none;
     color: $color-light;
     filter: brightness(50%);
@@ -63,68 +65,67 @@ header {
   }
 }
 
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 40px;
+  display: none;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
 .main-text {
   position: absolute;
-  color: $color-main;
+  color: $color-support;
   font-size: 64px;
   font-weight: 700;
-  height: 100vh;
   width: 100%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -40%);
-}
-
-h1 {
-  z-index: 2;
-  align-items: center;
+  transform: translate(-50%, -70%);
+  display: flex;
   flex-direction: column;
-  margin-bottom: 0;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    z-index: 2;
+    margin-bottom: 0;
+  }
+
+  .skill-left {
+    width: 80%;
+    text-align: left;
+    font-family: $font-header;
+  }
+
+  .skill-right {
+    width: 90%;
+    text-align: right;
+    font-family: $font-header;
+  }
+
+  .line {
+    margin: 20px 0 0 0;
+    right: 50%;
+    width: 20%;
+    border-top: 3px solid $color-support;
+  }
 }
 
-.skill-left {
-  text-align: left;
-  margin-left: 15%;
-}
-
-.skill-right {
-  text-align: right;
-  margin-right: 10%;
-}
 
 .bottom-text {
-  position: absolute;
   width: 100%;
-  height: 100vh;
+  position: absolute;
   top: 90%;
   left: 90%;
-  transform: translate(-90%, -20%);
-  color: $color-main;
+  transform: translate(-90%, -65%);
+  color: $color-light;
   font-size: 34px;
-} 
-
-@media (min-width: 576px) {
-  .main-text h1 {
-    font-size: 70px;
-  }
-}
-@media (min-width: 768px) {
-  .main-text h1 {
-    font-size: 76px;
-  }
-}
-@media (min-width: 992px) {
-  .main-text h1 {
-    font-size: 100px;
-  }
-}
-@media (min-width: 1200px) {
-  .main-text h1 {
-    font-size: 124px;
-  }
-}
-@media (min-width: 1400px) {
-  .main-text h1 {
-    font-size: 150px;
-  }
+  font-weight: 100;
+  font-family: $font-header;
 }

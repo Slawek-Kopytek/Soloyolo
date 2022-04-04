@@ -1,0 +1,165 @@
+.article-product,
+.article-about,
+.article-contact {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+@media only screen and  (max-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+
+  .who p {
+    font-size: 40px;
+  }
+
+  .home-wrapper {
+    max-height: 1500px;
+  }
+
+  .main-text h1 {
+    font-size: 90px;
+  }
+
+
+}
+
+@media screen and (max-width: 992px) {
+  .main-text h1 {
+    font-size: 80px;
+  }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  .main-text h1 {
+    font-size: 60px;
+  }
+
+  .main-text .skill-left {
+    text-align: center;
+  }
+
+  .main-text .skill-right {
+    text-align: center;
+  }
+
+  .product-widget .skill-right .skill-description {
+    padding: 0;
+  }
+
+  .product-widget .skill-image{
+    position: relative;
+    width: 100%;
+  }
+
+  .home-wrapper {
+    max-height: 3000px;
+  }
+
+  .badge{
+    position: absolute;
+    margin-left: 50%;
+  }
+
+  .container {
+    margin: 80px auto;
+    width: 90%;
+  }
+
+  .nav-ul {
+    display: none;
+    width: 100%;
+    height: 40vh;
+    flex-direction: column;
+    background-color: $color-dark;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0 20px;
+
+
+
+    li{
+      margin: 10px 0;
+
+      a {
+        font-size: 40px;
+        color: $color-light;
+        filter: brightness(100%);
+
+        &:hover {
+          filter: brightness(50%);
+        }
+      }
+    }
+  }
+
+  .nav-ul.show {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .hamburger {
+    margin-right: 15%;
+    display: block;
+  }
+
+  .title h2 {
+    font-size: 50px;
+  }
+
+  .who p {
+    font-size: 28px;
+    margin: 0;
+  }
+}
+
+
+@media only screen and (max-width: 576px) {
+  .main-text h1 {
+    font-size: 70px;
+
+  }
+
+  .title h2 {
+    font-size: 30px;
+  }
+
+  .who p {
+    font-size: 16px;
+  }
+
+  .home-widget .who {
+    margin-top: 60px;
+  }
+
+  .product-widget .name {
+    font-size: 36px;
+  }
+
+  .product-widget .skill-right .skill-image {
+    max-width: 300px;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .head-description {
+    background-color: $color-dark;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    margin-top: 0;
+  }
+
+  .product-widget .skill-right .skill-image {
+    z-index: 0;
+  }
+} 
