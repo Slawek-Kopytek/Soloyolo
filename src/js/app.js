@@ -5,9 +5,7 @@ const app = {
 
   initPages: function () {
 
-
     const links = document.querySelectorAll(select.nav.links);
-
 
     const articleAbout = document.querySelector(article.about);
     const articleProduct = document.querySelector(article.products);
@@ -27,8 +25,9 @@ const app = {
         if (href == '#products') {
           articleProduct.classList.add(classNames.pages.active);
         } if (href == '#home') {
-          articleAbout.classList.add(classNames.pages.active);
           articleProduct.classList.add(classNames.pages.active);
+        } if (href == '#about') {
+          articleAbout.classList.add(classNames.pages.active);
         } if (href == '#contact') {
           articleContact.classList.add(classNames.pages.active);
         }
@@ -57,17 +56,25 @@ const app = {
     for(let productData in thisApp.data.products){
       new Product(thisApp.data.products[productData].id, thisApp.data.products[productData]);
     }
-
   },
 
-  initHamburger: function(){
-    const hamburger = document.getElementById('hamburger');
-    const navUL = document.getElementById('nav-ul');
+  initBurger: function() {
+    const thisApp =this;
 
-    hamburger.addEventListener('click', () => {
-      navUL.classList.toggle('show');
+    thisApp.burger = document.querySelector(select.nav.burger);
+    thisApp.nav = document.querySelector(select.nav.links);
+    thisApp.navItems = document.querySelectorAll(select.nav.item);
+    
+    thisApp.burger.addEventListener('click', function(){
+      thisApp.burger.classList.toggle('active');
+      thisApp.nav.classList.toggle('active');
     });
-
+    thisApp.navItems.forEach(function(item){
+      item.addEventListener('click', function(){
+        thisApp.burger.classList.remove('active');
+        thisApp.nav.classList.remove('active');
+      });
+    });
   },
 
   init: function() {
@@ -76,10 +83,8 @@ const app = {
     thisApp.initPages();
     thisApp.initData();
     thisApp.initMenu();
-    //thisApp.initHome();
-    //thisApp.initContact();
-    thisApp.initHamburger();
+    thisApp.initBurger();
   },
 };
 
-app.init(); 
+app.init();

@@ -59,10 +59,10 @@
   transition: $transition;
   border-color: $color-main;
   color: $color-main;
-  background-image: linear-gradient(90deg, $color-main 50%, transparent 50%)
+  background-image: linear-gradient(90deg, $color-main 50%, transparent 50%);
 }
 
 .submit-btn:hover {
-  background-position: 0 100%;  
+  background-position: top right;
   color: $color-light;
 }
