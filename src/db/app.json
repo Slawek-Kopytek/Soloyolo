@@ -30,13 +30,5 @@
         "<img src=\"images/coffee-3.jpg\">"
       ]
     }
-  ],
-
-  "about-us": [
-    {
-      "who": "Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new, something original.",
-      "coffee": " Our coffees reflect us – young, wild and free. We are on the journey of new tastes...",
-      "join": "Join us!"
-    }
   ]
 } 

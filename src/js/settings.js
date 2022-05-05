@@ -1,7 +1,6 @@
 export const select = {
   templateOf: {
     productList: '#template-products-widget',
-    aboutList: '#template-about-widget',
   },
   containerOf: {
     pages: '#pages',
@@ -20,15 +19,9 @@ export const article = {
   contact: '#article-contact',
 };
 
-export const titles = {
-  home: 'Products',
-  products: 'Products',
-  contact: 'Contact us'
-};
-
 export const classNames = {
   nav: {
-    active: 'nav-active',
+    active: 'active',
   },
   pages: {
     active: 'active',
@@ -44,5 +37,4 @@ export const settings = {
 
 export const templates = {
   menuProduct: Handlebars.compile(document.querySelector(select.templateOf.productList).innerHTML),
-  aboutWidget: Handlebars.compile(document.querySelector(select.templateOf.aboutList).innerHTML),
 }; 

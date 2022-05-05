@@ -3,28 +3,3 @@
   margin: 40px auto ;
   width: 90%;
 }
-
-section {
-  display: none;
-
-  &.active {
-    display: block;
-  }
-}
-
-
-.title {
-  display: flex;
-  justify-content: center;
-
-
-  h2 {
-    font-size: 75px;
-    color: $color-support;
-    border-bottom: 3px solid $color-support;
-    max-width: 800px;
-    padding: 0 80px;
-    font-weight: $font-weight-bold;
-
-  }
-}
