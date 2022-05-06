@@ -18,6 +18,7 @@ header{
         font-size: 2rem;
         font-family: $font-header;
         font-style: oblique;
+        margin: 0;
       }
 
       i{
@@ -64,20 +65,22 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 60px;
 
   li{
     list-style: none;
     border: 2px solid transparent;
-    border-radius: 10px 50%;
+    border-radius: 10px;
 
     &:hover{
       border-color: $color-accent;
     }
 
     a{
-      color: $color-light;
+      color: $color-accent;
       text-decoration: none;
+      display: block;
+      padding: 1rem;
   
       .nav-link{
         transition: 1s ease;
@@ -178,8 +181,8 @@ header{
   .middle-text{
     display: none;
   }
+
   .bottom-text{
     display: none;
   }
 }
-
