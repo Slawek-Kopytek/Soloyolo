@@ -1,11 +1,11 @@
-.home-wrapper {
+.about-wrapper {
   margin: 0;
   max-width: 1920px;
   max-height: 1400px;
   width: 100%;
 }
 
-.home-widget {
+.about-widget {
   position: relative;
   display: flex;
   justify-content: center;
@@ -17,7 +17,7 @@
     max-height: 852px;
     height: 100%;
     object-fit: cover;
-    filter: brightness(22%);
+    filter: brightness(35%);
   }
 
   div {
@@ -25,7 +25,7 @@
   }
 
   .who {
-    color: $color-light;
+    color: $color-bg;
     margin-top: 162px;
     font-weight: $font-weight-semi-bold;
     font-style: italic;
@@ -35,8 +35,4 @@
     max-height: 492px;
     width: 70%;
   }
-}
-
-.about h2 {
-  text-transform: uppercase;
 }

@@ -8,15 +8,10 @@ export const select = {
   },
   nav: {
     links: '.nav-links',
+    linkItem: '.nav-link',
     item: '.nav-item',
     burger: '.burger',
   },
-};
-
-export const article = {
-  about: '#article-about',
-  products: '#article-product',
-  contact: '#article-contact',
 };
 
 export const classNames = {

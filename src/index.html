@@ -16,7 +16,6 @@
       <p class="nav-branding">Columbiano</p>
       <ul class="nav-links" id="nav-links">
         <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
         <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
         <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
@@ -43,74 +42,49 @@
     <section id="home">
       <div class="home-wrapper container"></div>
     </section>
-    <section id="products">
-      <div id="product-list" class="product-list container"></div>
+    <section class="about-wrapper" id="about">
+      <div class="about-widget container">
+        <img src="images/about-us.jpg" alt="basket of beans">
+        <div class="who">
+          <p>Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new, something original.
+            <br>Our coffees reflect us – young, wild and free. We are on the journey of new tastes...
+            <br>Join us!
+          </p>
+        </div>
+      </div>
     </section>
-    <section id="about">
-      <div class="about-wrapper container"></div>
-    </section>
-    <section id="contact">
-      <div class="contact-wrapper container"></div>
+
+    <section class="contact-wrapper" id="contact">
+      <div class="contact-box container">
+        <form>
+          <input type="text" class="input-field" placeholder="Your Name">
+          <input type="email" class="input-field" placeholder="Your Email">
+          <input type="text" class="input-field" placeholder="Subject">
+          <textarea type="text" class="input-field textarea-field" placeholder="Your message"></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
     </section>
   </div>
 
   <script id="template-products-widget" type="text/x-handlebars-template">
-    <section class="product-list home-wrapper active">
+    <section class="product-list home-wrapper active" id="home">
       <div class="container">
-        <div class="card">
+        <div class="card" style='flex-direction: {{{order}}}'>
           <div class="card-image">
             {{{ images }}}
           </div>
           <div class="content">
             <h3>{{{ id }}} {{{ name }}}</h3>
             <p>{{{ description }}}</p>
-            <p>roasting: <span>{{{ roasting }}}</span></p>
-            <p>intensity: <span>{{{ intensity }}}</span></p>
+            <p>Roasting:  <strong>{{{ roasting }}}</strong></p>
+            <p>Intensity: <strong>{{{ intensity }}}</strong></p>
           </div>
         </div>
       </div>
     </section>
   </script>
 
-  <section class="about-wrapper">
-    <div class="home-widget container">
-      <img src="images/about-us.jpg" alt="basket of beans">
-      <div class="title about">
-        <h2>About us</h2>
-      </div>
-      <div class="who">
-        <p>Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new, something original.
-          <br>Our coffees reflect us – young, wild and free. We are on the journey of new tastes...
-          <br>Join us!
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact-wrapper">
-    <div class="contact-widget">
-      <div class="title about">
-        <h2>Contact us</h2>
-      </div>
-      <form class="form" action="mailto:slavkopytek@gmail.com" method="post" enctype="text/plain">
-        <div class="form-row">
-          <label for="filed-name">Name</label><br>
-          <input type="text" placeholder="Your name" name="name" required id="filed-name">
-        </div>
-        <div class="form-row">
-          <label for="filed-name">Title</label><br>
-          <input type="text" placeholder="Subject" name="title" required id="filed-title">
-        </div>
-        <div class="form-row">
-          <label for="field-message" class="field-message">Message</label>
-          <textarea name="message" placeholder="Type your message here" required id="field-message"></textarea>
-        </div>
-        <div class="form-row">
-          <button type="submit" class="submit-btn">Submit</button>
-        </div>
-      </form>
-    </div>
-  </section>
   <footer class="endline">
     <div class="icons-wrapper">
       <a href="#"><i class="fa-brands fa-facebook icon"><span>Facebook</span></i></a>

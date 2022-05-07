@@ -1,6 +1,7 @@
 {
   "products":[
     {
+      "order": "row",
       "id": "01.",
       "name": "Volcanica Colombian Peaberry",
       "roasting": "3/10",
@@ -11,6 +12,7 @@
       ]
     },
     {
+      "order": "row-reverse",
       "id": "02.",
       "name": "Fresh Roasted Coffee Colombian Supremo",
       "roasting": "5/10",
@@ -21,6 +23,7 @@
       ]
     },
     {
+      "order": "row",
       "id": "03.",
       "name": "Don Pablo Colombian Supremo Coffee",
       "roasting": "8/10",
